@@ -4,7 +4,7 @@
 
 ---
 
-:warning: **Project In Progress**: Please note that this project is currently under development. Features may not be fully functional, and the content is subject to change. We appreciate your patience and understanding as we work to bring you the best experience!
+:warning: **Project In Progress**: Please note that this project is currently under development. Features may not be fully functional, and the content is subject to change. I appreciate your patience and understanding as we work to bring you the best experience!
 
 ---
 
