@@ -2,6 +2,12 @@
 
 ![Daily Vibe Logo](./assets/logo.png)
 
+---
+
+:warning: **Project In Progress**: Please note that this project is currently under development. Features may not be fully functional, and the content is subject to change. We appreciate your patience and understanding as we work to bring you the best experience!
+
+---
+
 ## Description
 
 Daily Vibe is a Chrome extension designed to help you track your daily mood. It asks you every day, "How are you?" but phrases it differently each time for a refreshing experience. Rate your mood and leave a sentence if you like. Access your mood progression over the year through a beautifully designed chart.
