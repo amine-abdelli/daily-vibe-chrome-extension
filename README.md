@@ -1,6 +1,6 @@
 # Daily Vibe: Your Daily Mood Tracker
 
-![Daily Vibe Logo](./assets/logo.png)
+![Daily Vibe Logo](./images/logo.png)
 
 ---
 

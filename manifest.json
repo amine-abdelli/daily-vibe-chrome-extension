@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Daily Vibe",
+  "version": "1.0.0",
+  "description": "Daily Vibe is a Chrome extension designed to help you track your daily mood.",
+  "icons": {
+    "16": "images/logo.png"
+  },
+  "permissions": [
+    "tabs", 
+    "alarms", 
+    "notifications", 
+    "activeTab", 
+    "storage"
+  ],
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "images/logo.png"
+    }
+  },
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["popup/popup.js", "scripts/content.js"]
+    }
+  ]
+}
