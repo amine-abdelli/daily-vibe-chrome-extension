@@ -7,10 +7,10 @@
     "16": "images/logo.png"
   },
   "permissions": [
-    "tabs", 
-    "alarms", 
-    "notifications", 
-    "activeTab", 
+    "tabs",
+    "alarms",
+    "notifications",
+    "activeTab",
     "storage"
   ],
   "background": {
@@ -28,8 +28,13 @@
   ],
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["popup/popup.js", "scripts/content.js"]
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "popup/popup.js"
+      ],
+      "type": "module"
     }
   ]
 }
