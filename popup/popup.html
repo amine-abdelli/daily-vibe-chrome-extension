@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Daily Vibe Popup</title>
-    <link rel="stylesheet" type="text/css" href="popup.css">
-    <script type="text/javascript" src="popup.js"></script>
-  </head>
-  <body>
-    <button id="notify-button">Notify Me</button>
-  </body>
+
+<head>
+  <title>Daily Vibe Popup</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+  <script type="text/javascript" src="popup.js"></script>
+</head>
+
+<body>
+  <section class="section first-section">
+    <div id="start" class="sun-wrap">
+      <div class="sun-pulsate"></div>
+      <div class="sun-puls"></div>
+    </div>
+    <div class="main-content">
+      <h1 class="greet greet--title">Hi Amine</h1>
+      <p class="greet--text">How are you doing today ?</p>
+    </div>
+  </section>
+  <section class="section second-section">
+    <h1 class="mood-picker--title">What's your mood today ?</h1>
+    <p class="mood-picker--text">Pick the emoji that represent your mood the most !</p>
+    <div class="icon-wrapper">
+      <img id="icon--very-bad" data-mood="veryBad" class="icon" src="../images/very-bad.svg" />
+      <img id="icon--bad" data-mood="bad" class="icon" src="../images/bad.svg" />
+      <img id="icon--neutral" data-mood="neutral" class="icon" src="../images/neutral.svg" />
+      <img id="icon--good" data-mood="good" class="icon" src="../images/good.svg" />
+      <img id="icon--very-good" data-mood="veryGood" class="icon" src="../images/very-good.svg" />
+    </div>
+  </section>
+  <section class="section third-section">
+    <div id="mood-input-header">
+      <span id="picked-mood-emoji"></span>
+      <span>
+        <h1 class="mood-input--title">Tell me about it</h1>
+        <p class="mood-input--text">Seems you're not doing so well, tell me about it !</p>
+      </span>
+    </div>
+    <input id="mood-input" type="text" placeholder="Press enter to save or skip this step" maxlength="140" />
+  </section>
+  <section class="section fourth-section">
+    <h1 class="end-section--title">Thanks for sharing Amine</h1>
+    <p class="end-section--text">Carry on with your awesome self !</p>
+    <button id="journey-button">See your journey</button>
+  </section>
+</body>
+
 </html>
