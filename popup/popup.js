@@ -1,16 +1,7 @@
-const MoodEnum = {
-  VERY_BAD: "veryBad",
-  BAD: "bad",
-  NEUTRAL: "neutral",
-  GOOD: "good",
-  VERY_GOOD: "veryGood"
-}
-
+const username = 'Amine';
 document.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('.section');
   let moodOfTheDay, currentSentenceOfTheDay, inputDataset = '';
-
-  const username = 'Amine';
   let currentSectionIndex = 0;
 
   function showSection(index) {
@@ -33,14 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // second section
   document.querySelector('.mood-picker--title').innerHTML = randomlyPickASentence(moodTitle, username);
   document.querySelector('.mood-picker--text').innerHTML = randomlyPickASentence(moodText, username);
-
   // Start button
-  document.querySelector('#start').addEventListener('click', () => {
-    goToNextSection();
-  });
-
+  document.querySelector('#start').addEventListener('click', () => goToNextSection());
   // Mood selector
-  document.querySelectorAll('.icon').forEach((element, index) => {
+  document.querySelectorAll('.icon').forEach((element) => {
     element.addEventListener('click', () => {
       moodOfTheDay = element.id;
       inputDataset = element.dataset.mood;
@@ -56,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const entereableElement = document.querySelector('#mood-input');
   entereableElement.addEventListener('keydown', (event) => {
-    console.log('event:', event)
     if (event.key === 'Enter') {
       const currentSentenceOfTheDay = event.target.value
       currentSectionIndex++;
@@ -64,6 +50,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+function randomlyPickASentence(array, _username) {
+  return array[Math.floor(Math.random() * array.length)].replace(':username', _username);
+}
+
+const MoodEnum = {
+  VERY_BAD: "veryBad",
+  BAD: "bad",
+  NEUTRAL: "neutral",
+  GOOD: "good",
+  VERY_GOOD: "veryGood"
+}
 
 // First section
 const greetTitle = [
@@ -420,7 +418,6 @@ const moodInputText = {
     "Life's a joyride today. What's the destination?",
   ],
 }
-// End section
 const endSectionTitle = [
   "Thanks for sharing!",
   "Today's Reflection",
@@ -486,9 +483,3 @@ const endSectionText = [
   "Stay you, stay true, :username. Bowing out!",
   "Rock on, :username. Dropping the mic!"
 ]
-
-// Utils
-function randomlyPickASentence(array, _username) {
-  console.log(array)
-  return array[Math.floor(Math.random() * array.length)].replace(':username', _username);
-}
