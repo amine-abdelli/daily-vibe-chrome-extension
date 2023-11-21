@@ -2,12 +2,15 @@
 <html>
 
 <head>
-  <title>Daily Vibe Popup</title>
+  <title>Daily Vibe</title>
   <link rel="stylesheet" type="text/css" href="popup.css">
-  <script type="text/javascript" src="popup.js"></script>
 </head>
 
 <body>
+  <section class="section greet-section">
+    <p>It looks like it's your first time here. Let's begin this journey with your name :)</p>
+    <input id="username-input" type="text" maxlength="22" />
+  </section>
   <section class="section first-section">
     <div id="start" class="sun-wrap">
       <div class="sun-pulsate"></div>
@@ -44,6 +47,8 @@
     <p class="end-section--text">Carry on with your awesome self !</p>
     <button id="journey-button">See your journey</button>
   </section>
+  <script type="module" src="../scripts/sentences.js"></script>
+  <script type="module" src="popup.js"></script>
 </body>
 
 </html>

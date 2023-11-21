@@ -131,7 +131,6 @@ input {
 }
 
 .first-section {
-  display: block;
   display: flex;
   flex-direction: column;
   background-color: var(--main-dark-bg-color);
@@ -145,6 +144,10 @@ input {
 
 .main-content {
   margin-left: 3.85rem;
+}
+
+.section {
+  display: none;
 }
 
 .sun-wrap {
@@ -204,6 +207,7 @@ input {
   bottom: 0;
   left: 0;
   right: 0;
+  border-radius: 0rem 0rem 0.7rem 0.7rem;
 }
 
 .fourth-section {
@@ -243,4 +247,18 @@ input {
     transform: scale(1.2);
     opacity: 0;
   }
+}
+
+.hidden {
+  display: none;
+}
+
+.last {
+  width: 50rem;
+  height: 50rem;
+}
+
+#daily-vibe-chart {
+  width: 50rem;
+  height: 50rem;
 }

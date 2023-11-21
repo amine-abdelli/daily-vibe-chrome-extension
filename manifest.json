@@ -32,7 +32,8 @@
         "<all_urls>"
       ],
       "js": [
-        "popup/popup.js"
+        "popup/popup.js",
+        "scripts/sentences.js"
       ],
       "type": "module"
     }
